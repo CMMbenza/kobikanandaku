@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /asset/img/
+
+# Interdire l'indexation du dossier d'administration
+Disallow: /admin/
+Disallow: /admin
+
+# Lien vers votre sitemap (adapter selon votre domaine)
+Sitemap: https://starupkobikanandaku.cd/sitemap.xml

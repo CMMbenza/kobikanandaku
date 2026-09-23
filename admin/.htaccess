@@ -1,0 +1,8 @@
+# Empêcher le listing des fichiers dans le dossier admin
+Options -Indexes
+
+# Protection contre les injections de scripts exécutables
+<FilesMatch "\.(phtml|php3|php4|php5|phps|cgi|pl|py)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>

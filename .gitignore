@@ -1,0 +1,17 @@
+# Environnement & Identifiants
+.env
+.env.local
+config.php
+*.log
+
+# Système d'exploitation & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Fichiers temporaires ou uploads de test
+/tmp/
+*.sql
+*.tar.gz
+*.zip

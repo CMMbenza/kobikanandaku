@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STAR UP KOBIKA NA NDAKU | Innovation Technologique & Écologique</title>
 
-      <link rel="icon" type="image/x-icon" href="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg">
+    <link rel="icon" type="image/x-icon" href="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,135 +20,135 @@
 
     <!-- Tailwind Custom Configuration -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            emerald: '#059669', // Santé & Écologie (Emerald-600)
-                            emeraldDark: '#047857',
-                            cyan: '#0284c7',    // Énergie & Tech Quantique (Sky-600)
-                            cyanDark: '#0369a1',
-                            teal: '#0d9488',    // Accord Santé (Teal-600)
-                            amber: '#d97706',   // Chaleur Humaine & Agro (Amber-600)
-                            amberLight: '#fef3c7',
-                            dark: '#0f172a',    // Slate-900
-                        }
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        emerald: '#059669', // Santé & Écologie (Emerald-600)
+                        emeraldDark: '#047857',
+                        cyan: '#0284c7', // Énergie & Tech Quantique (Sky-600)
+                        cyanDark: '#0369a1',
+                        teal: '#0d9488', // Accord Santé (Teal-600)
+                        amber: '#d97706', // Chaleur Humaine & Agro (Amber-600)
+                        amberLight: '#fef3c7',
+                        dark: '#0f172a', // Slate-900
                     }
                 }
             }
         }
+    }
     </script>
 
     <style>
-        /* CSS DÉDIÉ POUR LE LOGO */
-        .brand-logo-icon {
-            background: linear-gradient(135deg, #0284c7 0%, #059669 100%);
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-        }
+    /* CSS DÉDIÉ POUR LE LOGO */
+    .brand-logo-icon {
+        background: linear-gradient(135deg, #0284c7 0%, #059669 100%);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
 
-        .brand-logo-icon::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transform: rotate(30deg);
-            transition: transform 0.6s ease;
-        }
+    .brand-logo-icon::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transform: rotate(30deg);
+        transition: transform 0.6s ease;
+    }
 
-        .group:hover .brand-logo-icon::after {
-            transform: rotate(30deg) translate(100%, 100%);
-        }
+    .group:hover .brand-logo-icon::after {
+        transform: rotate(30deg) translate(100%, 100%);
+    }
 
-        .group:hover .brand-logo-icon {
-            transform: scale(1.08) rotate(3deg);
-            box-shadow: 0 10px 20px -5px rgba(5, 150, 105, 0.4);
-        }
+    .group:hover .brand-logo-icon {
+        transform: scale(1.08) rotate(3deg);
+        box-shadow: 0 10px 20px -5px rgba(5, 150, 105, 0.4);
+    }
 
-        /* ANIMATIONS CSS GLOBALES */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes pulseGlow {
-
-            0%,
-            100% {
-                box-shadow: 0 0 15px rgba(5, 150, 105, 0.3);
-            }
-
-            50% {
-                box-shadow: 0 0 25px rgba(2, 132, 199, 0.6);
-            }
-        }
-
-        .animate-fade-in-up {
-            animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .gradient-hero {
-            background: linear-gradient(135deg, #0284c7 0%, #059669 100%);
-        }
-
-        .page-section {
-            display: none;
+    /* ANIMATIONS CSS GLOBALES */
+    @keyframes fadeInUp {
+        from {
             opacity: 0;
-            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-            transform: translateY(10px);
+            transform: translateY(20px);
         }
 
-        .page-section.active {
-            display: block;
+        to {
             opacity: 1;
             transform: translateY(0);
-            animation: fadeInUp 0.5s ease-out forwards;
+        }
+    }
+
+    @keyframes pulseGlow {
+
+        0%,
+        100% {
+            box-shadow: 0 0 15px rgba(5, 150, 105, 0.3);
         }
 
-        .custom-shadow {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        50% {
+            box-shadow: 0 0 25px rgba(2, 132, 199, 0.6);
         }
+    }
 
-        .hover-lift {
-            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
-        }
+    .animate-fade-in-up {
+        animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
 
-        .hover-lift:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-        }
+    .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
 
-        /* Animation pour les cartes de la galerie */
-        .gallery-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    .gradient-hero {
+        background: linear-gradient(135deg, #0284c7 0%, #059669 100%);
+    }
 
-        .gallery-card:hover {
-            transform: scale(1.03);
-            z-index: 10;
-        }
+    .page-section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        transform: translateY(10px);
+    }
+
+    .page-section.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    .custom-shadow {
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hover-lift {
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+
+    /* Animation pour les cartes de la galerie */
+    .gallery-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .gallery-card:hover {
+        transform: scale(1.03);
+        z-index: 10;
+    }
     </style>
 </head>
 
@@ -165,7 +165,7 @@
                     <div
                         class="w-11 h-11 rounded-xl brand-logo-icon flex items-center justify-center text-white shadow-md">
                         <!-- <i class="fa-solid fa-atom text-xl animate-spin-slow"></i> -->
-                         <img src="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg" alt="" srcset="">
+                        <img src="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg" alt="" srcset="">
                     </div>
                     <div class="flex flex-col">
                         <span
@@ -742,7 +742,8 @@
                     <div
                         class="bg-white rounded-2xl overflow-hidden border border-slate-200 custom-shadow hover-lift lg:col-span-1 lg:col-start-1">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
-                            <img src="asset/img/logo/WhatsApp%20Image%202026-09-18%20at%2013.18.41%20(2).jpeg" alt="Ir KABEMBA Alka"
+                            <img src="asset/img/logo/WhatsApp%20Image%202026-09-18%20at%2013.18.41%20(2).jpeg"
+                                alt="Ir KABEMBA Alka"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6 text-center">
@@ -755,7 +756,8 @@
                     <!-- Member 5 -->
                     <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 custom-shadow hover-lift">
                         <div class="h-64 bg-slate-200 relative overflow-hidden">
-                            <img src="asset/img/logo/WhatsApp%20Image%202026-09-18%20at%2013.18.41%20(2).jpeg" alt="Ir AFANA Stéphane"
+                            <img src="asset/img/logo/WhatsApp%20Image%202026-09-18%20at%2013.18.41%20(2).jpeg"
+                                alt="Ir AFANA Stéphane"
                                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-6 text-center">
@@ -918,11 +920,13 @@
                                 class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-emerald flex items-center justify-center text-2xl mb-6">
                                 <i class="fa-solid fa-leaf"></i>
                             </div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-2">Thé ARTEMISIA ANNUA et Gingembre ( Thé Artemisia KOBIKA)</h3>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Thé ARTEMISIA ANNUA et Gingembre ( Thé
+                                Artemisia KOBIKA)</h3>
                             <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                                Solution naturelle efficace pour la prévention et traitement des États grippaux, et du paludisme simple. 
-Stimulant naturelle de l'immunité sans effet secondaire. 
-À consommer avec modération pendant un mois
+                                Solution naturelle efficace pour la prévention et traitement des États grippaux, et du
+                                paludisme simple.
+                                Stimulant naturelle de l'immunité sans effet secondaire.
+                                À consommer avec modération pendant un mois
                             </p>
                         </div>
                         <div class="pt-4 border-t border-slate-100">
@@ -981,7 +985,8 @@ Stimulant naturelle de l'immunité sans effet secondaire.
             <!-- Hero Banner -->
             <div class="bg-slate-900 text-white py-16 sm:py-20 relative overflow-hidden">
                 <div class="absolute inset-0 opacity-25 bg-cover bg-center"
-                    style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7J4wt9nDFN3_dYhvgIVSueKyRWrW4A7AxONg0jpfYwg0VYmGyjAoC04&s=10');"></div>
+                    style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7J4wt9nDFN3_dYhvgIVSueKyRWrW4A7AxONg0jpfYwg0VYmGyjAoC04&s=10');">
+                </div>
                 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <span class="text-brand-cyan font-bold text-sm tracking-wider uppercase mb-2 block">Pôle Énergie &
                         Environnement</span>
@@ -1118,7 +1123,8 @@ Stimulant naturelle de l'immunité sans effet secondaire.
             <!-- Hero Banner -->
             <div class="bg-slate-900 text-white py-16 sm:py-20 relative overflow-hidden">
                 <div class="absolute inset-0 opacity-25 bg-cover bg-center"
-                    style="background-image: url('asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.22 (1).jpeg');"></div>
+                    style="background-image: url('asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.22 (1).jpeg');">
+                </div>
                 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <span class="text-brand-teal font-bold text-sm tracking-wider uppercase mb-2 block">Pôle Digital &
                         Souveraineté Alimentaire</span>
@@ -1363,14 +1369,30 @@ Stimulant naturelle de l'immunité sans effet secondaire.
                                 <div>
                                     <h4 class="font-bold text-slate-900 text-sm">Réseaux & Médias</h4>
                                     <div class="flex flex-col gap-2 mt-2">
-                                        <a href="https://www.facebook.com/share/1GtT9t8HPQ/" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
+                                        <a href="https://www.facebook.com/share/1GtT9t8HPQ/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
                                             <i class="fa-brands fa-facebook text-blue-600 text-sm"></i> Facebook
                                         </a>
-                                        <a href="https://youtu.be/uVY8ubzufJw" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
-                                            <i class="fa-brands fa-youtube text-red-600 text-sm"></i> Présentation Vidéo 1
+                                        <a href="https://youtu.be/uVY8ubzufJw" target="_blank" rel="noopener noreferrer"
+                                            class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
+                                            <i class="fa-brands fa-youtube text-red-600 text-sm"></i> Présentation Vidéo
+                                            1
                                         </a>
-                                        <a href="https://youtu.be/1Y8tf1NPl9M" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
-                                            <i class="fa-brands fa-youtube text-red-600 text-sm"></i> Présentation Vidéo 2
+                                        <a href="https://youtu.be/1Y8tf1NPl9M" target="_blank" rel="noopener noreferrer"
+                                            class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
+                                            <i class="fa-brands fa-youtube text-red-600 text-sm"></i> Présentation Vidéo
+                                            2
+                                        </a>
+                                        <a href="https://x.com/StarUpKobika?t=IQIKIKIKobh20d-iuwBcSA&s=08"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
+                                            <i class="fa-brands fa-x text-slate-900 text-sm"></i> X (Twitter)
+                                        </a>
+                                        <a href="https://vm.tiktok.com/ZS9AuLTYDkDU4-KGbKW/" target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-xs text-slate-600 hover:text-brand-emerald flex items-center gap-2 transition-colors">
+                                            <i class="fa-brands fa-tiktok text-slate-900 text-sm"></i> TikTok
                                         </a>
                                     </div>
                                 </div>
@@ -1409,64 +1431,78 @@ Stimulant naturelle de l'immunité sans effet secondaire.
                         </div>
 
                         <form id="contact-quote-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nom & Prénom *</label>
-            <input type="text" name="fullname" required
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
-                placeholder="Ex: Jean Dupont">
-        </div>
-        <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Structure / Hôpital / Entreprise</label>
-            <input type="text" name="company"
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
-                placeholder="Ex: Centre Hospitalier Régional">
-        </div>
-    </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Nom & Prénom
+                                        *</label>
+                                    <input type="text" name="fullname" required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
+                                        placeholder="Ex: Jean Dupont">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Structure /
+                                        Hôpital / Entreprise</label>
+                                    <input type="text" name="company"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
+                                        placeholder="Ex: Centre Hospitalier Régional">
+                                </div>
+                            </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Adresse E-mail *</label>
-            <input type="email" name="email" required
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
-                placeholder="nom@exemple.com">
-        </div>
-        <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Téléphone / WhatsApp *</label>
-            <input type="tel" name="phone" required
-                class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
-                placeholder="+243 ...">
-        </div>
-    </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Adresse E-mail
+                                        *</label>
+                                    <input type="email" name="email" required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
+                                        placeholder="nom@exemple.com">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Téléphone /
+                                        WhatsApp *</label>
+                                    <input type="tel" name="phone" required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
+                                        placeholder="+243 ...">
+                                </div>
+                            </div>
 
-    <div>
-        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Objet de la demande *</label>
-        <select name="subject" required
-            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all bg-white">
-            <option value="">-- Sélectionnez l'objet de votre demande --</option>
-            <option value="Demande de devis : Couveuses Néonatales Quantiques">Demande de devis : Couveuses Néonatales Quantiques</option>
-            <option value="Demande de devis : Kits Solaires Hybrides & Batteries Lithium">Demande de devis : Kits Solaires Hybrides & Batteries Lithium</option>
-            <option value="Démonstration / Devis : Dossier Médical Numérique & Signes Vitaux">Démonstration / Devis : Dossier Médical Numérique & Signes Vitaux</option>
-            <option value="Commande : Thés Artemisia Annua & Gingembre">Commande : Thés Artemisia Annua & Gingembre</option>
-            <option value="Commande / Devis : Foyers Améliorés Écologiques">Commande / Devis : Foyers Améliorés Écologiques</option>
-            <option value="Devis : Filtration & Purification d'Eau">Devis : Filtration & Purification d'Eau</option>
-            <option value="Commande : Produits d'Aquaponie (Poissons / Tomates bio)">Commande : Produits d'Aquaponie (Poissons / Tomates bio)</option>
-            <option value="Autre demande / Partenariat institutionnel">Autre demande / Partenariat institutionnel</option>
-        </select>
-    </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Objet de la demande
+                                    *</label>
+                                <select name="subject" required
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all bg-white">
+                                    <option value="">-- Sélectionnez l'objet de votre demande --</option>
+                                    <option value="Demande de devis : Couveuses Néonatales Quantiques">Demande de devis
+                                        : Couveuses Néonatales Quantiques</option>
+                                    <option value="Demande de devis : Kits Solaires Hybrides & Batteries Lithium">
+                                        Demande de devis : Kits Solaires Hybrides & Batteries Lithium</option>
+                                    <option value="Démonstration / Devis : Dossier Médical Numérique & Signes Vitaux">
+                                        Démonstration / Devis : Dossier Médical Numérique & Signes Vitaux</option>
+                                    <option value="Commande : Thés Artemisia Annua & Gingembre">Commande : Thés
+                                        Artemisia Annua & Gingembre</option>
+                                    <option value="Commande / Devis : Foyers Améliorés Écologiques">Commande / Devis :
+                                        Foyers Améliorés Écologiques</option>
+                                    <option value="Devis : Filtration & Purification d'Eau">Devis : Filtration &
+                                        Purification d'Eau</option>
+                                    <option value="Commande : Produits d'Aquaponie (Poissons / Tomates bio)">Commande :
+                                        Produits d'Aquaponie (Poissons / Tomates bio)</option>
+                                    <option value="Autre demande / Partenariat institutionnel">Autre demande /
+                                        Partenariat institutionnel</option>
+                                </select>
+                            </div>
 
-    <div>
-        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Message / Détails du besoin *</label>
-        <textarea name="message" required rows="4"
-            class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
-            placeholder="Précisez votre demande..."></textarea>
-    </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Message / Détails
+                                    du besoin *</label>
+                                <textarea name="message" required rows="4"
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-emerald focus:border-transparent outline-none text-sm transition-all"
+                                    placeholder="Précisez votre demande..."></textarea>
+                            </div>
 
-    <button type="submit" id="submit-btn"
-        class="w-full py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldDark text-white font-bold text-base shadow-lg hover:shadow-emerald-500/20 transition-all hover:scale-[1.01] flex items-center justify-center gap-2">
-        <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
-    </button>
-</form>
+                            <button type="submit" id="submit-btn"
+                                class="w-full py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldDark text-white font-bold text-base shadow-lg hover:shadow-emerald-500/20 transition-all hover:scale-[1.01] flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+                            </button>
+                        </form>
 
                     </div>
                 </div>
@@ -1508,7 +1544,8 @@ Stimulant naturelle de l'immunité sans effet secondaire.
                     <div class="block items-center gap-3">
                         <div
                             class="w-9 h-9 rounded-lg brand-logo-icon flex items-center justify-center text-white font-bold">
-                            <img src="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg" alt="logo startup kobika na ndaku" srcset="">
+                            <img src="asset/img/logo/WhatsApp Image 2026-09-18 at 13.18.41 (2).jpeg"
+                                alt="logo startup kobika na ndaku" srcset="">
                         </div>
                         <span class="font-extrabold text-lg text-white">STAR UP KOBIKA NA NDAKU</span>
                     </div>
@@ -1563,14 +1600,20 @@ Stimulant naturelle de l'immunité sans effet secondaire.
                             class="fa-solid fa-location-dot text-brand-emerald mr-2"></i> Kinshasa, RDC</p>
                     <div class="flex gap-3">
                         <a href="https://www.facebook.com/share/1GtT9t8HPQ/" target="_blank" rel="noopener noreferrer"
-                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110" title="Facebook"><i
-                                class="fa-brands fa-facebook-f text-xs"></i></a>
+                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110"
+                            title="Facebook"><i class="fa-brands fa-facebook-f text-xs"></i></a>
                         <a href="https://youtu.be/uVY8ubzufJw" target="_blank" rel="noopener noreferrer"
-                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110" title="YouTube Video 1"><i
-                                class="fa-brands fa-youtube text-xs"></i></a>
+                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110"
+                            title="YouTube Video 1"><i class="fa-brands fa-youtube text-xs"></i></a>
                         <a href="https://youtu.be/1Y8tf1NPl9M" target="_blank" rel="noopener noreferrer"
-                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110" title="YouTube Video 2"><i
-                                class="fa-brands fa-youtube text-xs"></i></a>
+                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110"
+                            title="YouTube Video 2"><i class="fa-brands fa-youtube text-xs"></i></a>                       
+                            <a href="https://x.com/StarUpKobika?t=IQIKIKIKobh20d-iuwBcSA&s=08" target="_blank" rel="noopener noreferrer"
+                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110"
+                            title="X twitter Video 1"><i class="fa-brands fa-x text-xs"></i></a>
+                        <a href="https://vm.tiktok.com/ZS9AuLTYDkDU4-KGbKW/" target="_blank" rel="noopener noreferrer"
+                            class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-brand-emerald hover:text-white transition-all hover:scale-110"
+                            title="TikTok Video 2"><i class="fa-brands fa-tiktok text-xs"></i></a>
                     </div>
                 </div>
             </div>
@@ -1583,91 +1626,90 @@ Stimulant naturelle de l'immunité sans effet secondaire.
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Catalogue des images réelles du projet
-        const galleryImages = [
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.28 copy.jpeg',
-                title: ' ',
-                badge: 'Santé & Néonatologie',
-                badgeColor: 'bg-brand-emerald'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.27 (1).jpeg',
-                title: ' ',
-                badge: 'Couveuse Quantique',
-                badgeColor: 'bg-brand-emerald'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.34 (1).jpeg',
-                title: ' ',
-                badge: 'Énergie & Tech',
-                badgeColor: 'bg-brand-cyan'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.22 (1).jpeg',
-                title: ' ',
-                badge: 'Santé Numérique',
-                badgeColor: 'bg-brand-teal'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.35.jpeg',
-                title: ' ',
-                badge: 'Gouvernance',
-                badgeColor: 'bg-brand-emerald'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.32.jpeg',
-                title: ' ',
-                badge: 'Présentation',
-                badgeColor: 'bg-brand-cyan'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.30.jpeg',
-                title: ' ',
-                badge: 'Équipe Local',
-                badgeColor: 'bg-brand-emerald'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.31.jpeg',
-                title: ' ',
-                badge: 'Soutien Humain',
-                badgeColor: 'bg-brand-amber'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.27.jpeg',
-                title: ' ',
-                badge: 'Énergie Solaire',
-                badgeColor: 'bg-brand-cyan'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.23.jpeg',
-                title: ' ',
-                badge: 'Énergie Solaire',
-                badgeColor: 'bg-brand-cyan'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.43 (1).jpeg',
-                title: ' ',
-                badge: 'Aquaponie & Agro',
-                badgeColor: 'bg-brand-amber'
-            },
-            {
-                src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.23 (1).jpeg',
-                title: ' ',
-                badge: 'Infrastructure',
-                badgeColor: 'bg-brand-emerald'
-            }
-        ];
+    // Catalogue des images réelles du projet
+    const galleryImages = [{
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.28 copy.jpeg',
+            title: ' ',
+            badge: 'Santé & Néonatologie',
+            badgeColor: 'bg-brand-emerald'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.27 (1).jpeg',
+            title: ' ',
+            badge: 'Couveuse Quantique',
+            badgeColor: 'bg-brand-emerald'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.34 (1).jpeg',
+            title: ' ',
+            badge: 'Énergie & Tech',
+            badgeColor: 'bg-brand-cyan'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.22 (1).jpeg',
+            title: ' ',
+            badge: 'Santé Numérique',
+            badgeColor: 'bg-brand-teal'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.35.jpeg',
+            title: ' ',
+            badge: 'Gouvernance',
+            badgeColor: 'bg-brand-emerald'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.32.jpeg',
+            title: ' ',
+            badge: 'Présentation',
+            badgeColor: 'bg-brand-cyan'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.30.jpeg',
+            title: ' ',
+            badge: 'Équipe Local',
+            badgeColor: 'bg-brand-emerald'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.31.jpeg',
+            title: ' ',
+            badge: 'Soutien Humain',
+            badgeColor: 'bg-brand-amber'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.27.jpeg',
+            title: ' ',
+            badge: 'Énergie Solaire',
+            badgeColor: 'bg-brand-cyan'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.23.jpeg',
+            title: ' ',
+            badge: 'Énergie Solaire',
+            badgeColor: 'bg-brand-cyan'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.18.43 (1).jpeg',
+            title: ' ',
+            badge: 'Aquaponie & Agro',
+            badgeColor: 'bg-brand-amber'
+        },
+        {
+            src: 'asset/img/alls/WhatsApp Image 2026-09-18 at 13.33.23 (1).jpeg',
+            title: ' ',
+            badge: 'Infrastructure',
+            badgeColor: 'bg-brand-emerald'
+        }
+    ];
 
-        // Fonction pour afficher des images mélangées aléatoirement dans la galerie
-        function renderRandomGallery() {
-            const grid = document.getElementById('random-gallery-grid');
-            if (!grid) return;
+    // Fonction pour afficher des images mélangées aléatoirement dans la galerie
+    function renderRandomGallery() {
+        const grid = document.getElementById('random-gallery-grid');
+        if (!grid) return;
 
-            // Algorithme d'impartialité (Fisher-Yates) pour mélanger les images
-            const shuffled = [...galleryImages].sort(() => 0.5 - Math.random());
+        // Algorithme d'impartialité (Fisher-Yates) pour mélanger les images
+        const shuffled = [...galleryImages].sort(() => 0.5 - Math.random());
 
-            grid.innerHTML = shuffled.map((item, index) => `
+        grid.innerHTML = shuffled.map((item, index) => `
                 <div class="gallery-card group relative rounded-2xl overflow-hidden cursor-pointer shadow-md bg-slate-800 hover:shadow-xl"
                     onclick="openLightbox('${item.src}', '${item.title.replace(/'/g, "\\'")}')">
                     <img src="${item.src}" alt="${item.title}"
@@ -1678,100 +1720,106 @@ Stimulant naturelle de l'immunité sans effet secondaire.
                     </div>
                 </div>
             `).join('');
-        }
+    }
 
-        // SPA Page Navigation Logic
-        function navigateTo(pageId) {
-            const pages = document.querySelectorAll('.page-section');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
-
-            const targetPage = document.getElementById('page-' + pageId);
-            if (targetPage) {
-                targetPage.classList.add('active');
-            }
-
-            // Gestion de l'état actif des onglets de navigation
-            const navButtons = document.querySelectorAll('.nav-btn');
-            navButtons.forEach(btn => {
-                btn.classList.remove('text-brand-emerald', 'bg-emerald-50', 'font-semibold');
-                btn.classList.add('text-slate-600', 'font-medium');
-            });
-
-            const activeBtn = document.getElementById('nav-' + pageId);
-            if (activeBtn) {
-                activeBtn.classList.remove('text-slate-600', 'font-medium');
-                activeBtn.classList.add('text-brand-emerald', 'bg-emerald-50', 'font-semibold');
-            }
-
-            // Scroll to top smooth
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-
-            // Close mobile menu if open
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                toggleMobileMenu();
-            }
-
-            // If navigating to gallery, re-render random
-            if (pageId === 'gallery') {
-                renderRandomGallery();
-            }
-        }
-
-        // Mobile Menu Toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
-            if (menu) {
-                menu.classList.toggle('hidden');
-                if (menu.classList.contains('hidden')) {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                } else {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                }
-            }
-        }
-
-        // Lightbox Functions
-        function openLightbox(src, caption) {
-            const lightbox = document.getElementById('lightbox');
-            const img = document.getElementById('lightbox-img');
-            const cap = document.getElementById('lightbox-caption');
-            if (lightbox && img && cap) {
-                img.src = src;
-                cap.innerText = caption;
-                lightbox.classList.remove('hidden');
-            }
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox) {
-                lightbox.classList.add('hidden');
-            }
-        }
-
-        // Form Submit Handler
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const notification = document.getElementById('form-notification');
-            if (notification) {
-                notification.classList.remove('hidden');
-                e.target.reset();
-                setTimeout(() => {
-                    notification.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }, 100);
-            }
-        }
-
-        // Init Gallery on Load
-        document.addEventListener('DOMContentLoaded', () => {
-            renderRandomGallery();
+    // SPA Page Navigation Logic
+    function navigateTo(pageId) {
+        const pages = document.querySelectorAll('.page-section');
+        pages.forEach(page => {
+            page.classList.remove('active');
         });
+
+        const targetPage = document.getElementById('page-' + pageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+        }
+
+        // Gestion de l'état actif des onglets de navigation
+        const navButtons = document.querySelectorAll('.nav-btn');
+        navButtons.forEach(btn => {
+            btn.classList.remove('text-brand-emerald', 'bg-emerald-50', 'font-semibold');
+            btn.classList.add('text-slate-600', 'font-medium');
+        });
+
+        const activeBtn = document.getElementById('nav-' + pageId);
+        if (activeBtn) {
+            activeBtn.classList.remove('text-slate-600', 'font-medium');
+            activeBtn.classList.add('text-brand-emerald', 'bg-emerald-50', 'font-semibold');
+        }
+
+        // Scroll to top smooth
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+        // Close mobile menu if open
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            toggleMobileMenu();
+        }
+
+        // If navigating to gallery, re-render random
+        if (pageId === 'gallery') {
+            renderRandomGallery();
+        }
+    }
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        if (menu) {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+    }
+
+    // Lightbox Functions
+    function openLightbox(src, caption) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const cap = document.getElementById('lightbox-caption');
+        if (lightbox && img && cap) {
+            img.src = src;
+            cap.innerText = caption;
+            lightbox.classList.remove('hidden');
+        }
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.classList.add('hidden');
+        }
+    }
+
+    // Form Submit Handler
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        const notification = document.getElementById('form-notification');
+        if (notification) {
+            notification.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                notification.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 100);
+        }
+    }
+
+    // Init Gallery on Load
+    document.addEventListener('DOMContentLoaded', () => {
+        renderRandomGallery();
+    });
     </script>
 </body>
 
